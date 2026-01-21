@@ -1,0 +1,139 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+  
+body {  
+    font-family: 'Comic Sans MS', cursive, sans-serif;  
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  
+    min-height: 100vh;  
+    padding: 20px;  
+}  
+  
+.container {  
+    max-width: 800px;  
+    margin: 0 auto;  
+    background: white;  
+    border-radius: 20px;  
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);  
+    overflow: hidden;  
+}  
+  
+.hero {  
+    background: linear-gradient(45deg, #ff6b6b, #feca57);  
+    color: white;  
+    padding: 40px 20px;  
+    text-align: center;  
+}  
+  
+.hero h1 {  
+    font-size: 2.5em;  
+    margin-bottom: 10px;  
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);  
+}  
+  
+.subtitle {  
+    font-size: 1.3em;  
+    opacity: 0.9;  
+}  
+  
+.content {  
+    padding: 30px;  
+}  
+  
+section {  
+    margin-bottom: 30px;  
+}  
+  
+h2 {  
+    color: #333;  
+    margin-bottom: 15px;  
+    font-size: 1.5em;  
+}  
+  
+.detail-item {  
+    background: #f8f9fa;  
+    padding: 15px;  
+    margin: 10px 0;  
+    border-radius: 10px;  
+    border-left: 4px solid #ff6b6b;  
+}  
+  
+.activities ul, .gift-ideas ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+  
+.activities li, .gift-ideas li {  
+    background: #e8f5e8;  
+    padding: 10px 15px;  
+    margin: 8px 0;  
+    border-radius: 8px;  
+    border-left: 4px solid #48bb78;  
+}  
+  
+.rsvp {  
+    background: #fff5f5;  
+    padding: 20px;  
+    border-radius: 15px;  
+    border: 2px dashed #ff6b6b;  
+    text-align: center;  
+}  
+  
+.rsvp-buttons {  
+    margin-top: 15px;  
+}  
+  
+.btn {  
+    display: inline-block;  
+    padding: 12px 25px;  
+    margin: 5px;  
+    border-radius: 25px;  
+    text-decoration: none;  
+    font-weight: bold;  
+    transition: transform 0.2s;  
+}  
+  
+.btn:hover {  
+    transform: translateY(-2px);  
+}  
+  
+.btn-primary {  
+    background: #ff6b6b;  
+    color: white;  
+}  
+  
+.btn-secondary {  
+    background: #4ecdc4;  
+    color: white;  
+}  
+  
+footer {  
+    background: #2c3e50;  
+    color: white;  
+    padding: 20px;  
+    text-align: center;  
+}  
+  
+.countdown {  
+    font-size: 1.2em;  
+    font-weight: bold;  
+    margin-top: 10px;  
+    color: #feca57;  
+}  
+  
+@media (max-width: 600px) {  
+    .hero h1 {  
+        font-size: 2em;  
+    }  
+      
+    .content {  
+        padding: 20px;  
+    }  
+      
+    .btn {  
+        display: block;  
+        margin: 10px 0;  
+    }  
+}  
