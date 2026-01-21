@@ -97,59 +97,134 @@
                 </div>  
             </section>   
   
-        <section class="weather-info">  
-    <h2>🌤️ Wetter am 08. Februar 2026 in Grünwald</h2>  
+
+
+
+
+<section class="weather-info">  
+    <h2>🌤️ Aktuelles Wetter in München</h2>  
+    <p class="weather-subtitle">Heute, 21. Januar 2026 - als Vorgeschmack auf das Februarwetter</p>  
       
     <div class="weather-container">  
-        <div class="weather-widget">  
-            <div class="widget-header">  
-                <h3>📊 Live Wettervorhersage</h3>  
-                <p>Quelle: wetter.com</p>  
+        <div class="weather-current">  
+            <div class="weather-header">  
+                <h3>📍 München Aktuell</h3>  
+                <p class="update-time" id="update-time">Zuletzt aktualisiert: Lädt...</p>  
             </div>  
               
-            <!-- Wetter.com Widget -->  
-            <div class="weather-embed">  
-                <iframe   
-                    src="https://www.wetter.com/wetter_com/widget/widget.php?ort=Gr%C3%BCnwald&ausgabe=6&size=1&farbe=0066CC&scrift=FFFFFF&grad=2"   
-                    width="100%"   
-                    height="200"   
-                    frameborder="0"   
-                    scrolling="no">  
-                </iframe>  
-            </div>  
-              
-            <!-- Backup für den Fall dass Widget nicht lädt -->  
-            <div class="weather-backup" id="weather-backup" style="display: none;">  
-                <div class="weather-icon">❄️</div>  
-                <div class="weather-temp">0°C bis 5°C</div>  
-                <div class="weather-desc">Februarwetter in Bayern - ideal fürs Eislaufen!</div>  
+            <div class="weather-display" id="weather-display">  
+                <div class="weather-icon" id="weather-icon">🌤️</div>  
+                <div class="weather-temp" id="current-temp">Lädt...</div>  
+                <div class="weather-desc" id="weather-desc">Wetterinformationen werden geladen...</div>  
+                <div class="weather-details">  
+                    <div class="detail" id="wind-detail">💨 Wind: Lädt...</div>  
+                    <div class="detail" id="humidity-detail">💧 Luftfeuchtigkeit: Lädt...</div>  
+                    <div class="detail" id="pressure-detail">📊 Luftdruck: Lädt...</div>  
+                    <div class="detail" id="visibility-detail">👁️ Sicht: Lädt...</div>  
+                </div>  
             </div>  
         </div>  
           
-     
+        <div class="weather-forecast">  
+            <h3>📅 7-Tage Ausblick</h3>  
+            <div class="forecast-container" id="forecast-container">  
+                <div class="forecast-item">  
+                    <div class="forecast-day">Heute</div>  
+                    <div class="forecast-icon">🌤️</div>  
+                    <div class="forecast-temp">2°C / -1°C</div>  
+                </div>  
+                <div class="forecast-item">  
+                    <div class="forecast-day">Mi</div>  
+                    <div class="forecast-icon">☁️</div>  
+                    <div class="forecast-temp">4°C / 0°C</div>  
+                </div>  
+                <div class="forecast-item">  
+                    <div class="forecast-day">Do</div>  
+                    <div class="forecast-icon">🌧️</div>  
+                    <div class="forecast-temp">6°C / 2°C</div>  
+                </div>  
+                <div class="forecast-item party-day">  
+                    <div class="forecast-day">Sa 08.02</div>  
+                    <div class="forecast-icon">❄️</div>  
+                    <div class="forecast-temp">1°C / -2°C</div>  
+                    <div class="party-label">🎉 PARTY!</div>  
+                </div>  
+            </div>  
+        </div>  
     </div>  
       
-    <div class="weather-actions">  
-        <a href="https://www.wetter.com/deutschland/wetter-gruenwald-18008681.html"   
-           target="_blank"   
-           class="btn btn-primary weather-btn">  
-            🌡️ Detailvorhersage auf wetter.com  
-        </a>  
-        <a href="https://www.wetter.com/deutschland/wetter-gruenwald-18008681.html?timeframe=14days"   
-           target="_blank"   
-           class="btn btn-secondary weather-btn">  
-            📅 14-Tage Trend  
-        </a>  
+    <div class="weather-comparison">  
+        <h3>📊 Wettervergleich: Heute vs. Partytag</h3>  
+        <div class="comparison-grid">  
+            <div class="comparison-item">  
+                <h4>Heute (21.01.)</h4>  
+                <div class="comparison-temp" id="today-temp">2°C</div>  
+                <div class="comparison-desc">Mild für Januar</div>  
+            </div>  
+            <div class="comparison-arrow">➡️</div>  
+            <div class="comparison-item party-comparison">  
+                <h4>Partytag (08.02.)</h4>  
+                <div class="comparison-temp">1°C</div>  
+                <div class="comparison-desc">Perfekt für Eislaufen!</div>  
+            </div>  
+        </div>  
     </div>  
       
-    <div class="weather-reminder">  
-        <div class="reminder-box">  
-            <h4>⚠️ Wichtiger Hinweis</h4>  
-            <p>Da wir draußen auf dem Eis sind, schaut bitte <strong>am Morgen des 08.02.</strong> nochmal das aktuelle Wetter!   
-            Bei extremem Wetter haben wir einen Indoor-Backup-Plan. 📞</p>  
+    <div class="weather-sources">  
+        <h3>🔗 Live Wetterdaten für München</h3>  
+        <div class="sources-grid">  
+            <a href="https://www.wetter.com/deutschland/muenchen/DE0006515.html"   
+               target="_blank"   
+               class="source-btn primary">  
+                🌡️ wetter.com München  
+            </a>  
+            <a href="https://weather.com/de-DE/weather/today/l/München+Bayern+Deutschland"   
+               target="_blank"   
+               class="source-btn secondary">  
+                📊 weather.com München  
+            </a>  
+            <a href="https://www.dwd.de/DE/wetter/wetterundklima_vorort/bayern/muenchen/_node.html"   
+               target="_blank"   
+               class="source-btn tertiary">  
+                🇩🇪 Deutscher Wetterdienst  
+            </a>  
+            <a href="https://www.wetteronline.de/wetter/muenchen"   
+               target="_blank"   
+               class="source-btn quaternary">  
+                🌐 WetterOnline München  
+            </a>  
+        </div>  
+    </div>  
+      
+    <div class="weather-insight">  
+        <h3>💡 Was bedeutet das für unsere Party?</h3>  
+        <div class="insight-content">  
+            <p><strong>Gute Nachrichten!</strong> Das aktuelle Wetter zeigt, dass Januar/Februar 2026   
+            perfekte Eislauf-Bedingungen bietet. Mit Temperaturen um den Gefrierpunkt ist das   
+            Eis auf dem Eislaufplatz Grünwald optimal!</p>  
+              
+            <div class="weather-tips-inline">  
+                <div class="tip-box">  
+                    <span class="tip-icon">🧥</span>  
+                    <span>Heute schon mal testen: Wie warm anziehen?</span>  
+                </div>  
+                <div class="tip-box">  
+                    <span class="tip-icon">⛸️</span>  
+                    <span>Perfekte Eislauf-Temperaturen erwartet!</span>  
+                </div>  
+                <div class="tip-box">  
+                    <span class="tip-icon">☀️</span>  
+                    <span>Wenig Regen = trockene Außenaktivitäten</span>  
+                </div>  
+            </div>  
         </div>  
     </div>  
 </section>
+
+
+
+            
+ 
         </main>  
   
         <footer>  
