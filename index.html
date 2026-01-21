@@ -97,32 +97,85 @@
                 </div>  
             </section>   
   
-         <section class="weather-info">  
-    <h2>🌤️ Wetter am 23. Januar 2026</h2>  
+        <section class="weather-info">  
+    <h2>🌤️ Wetter am 08. Februar 2026 in Grünwald</h2>  
+      
     <div class="weather-container">  
-        <div class="weather-current">  
-            <div class="weather-icon" id="weather-icon">🌤️</div>  
-            <div class="weather-details">  
-                <div class="temperature" id="temperature">Lädt...</div>  
-                <div class="description" id="weather-desc">Wettervorhersage wird geladen...</div>  
-                <div class="location">📍 Grünwald, Bayern</div>  
+        <div class="weather-widget">  
+            <div class="widget-header">  
+                <h3>📊 Live Wettervorhersage</h3>  
+                <p>Quelle: wetter.com</p>  
+            </div>  
+              
+            <!-- Wetter.com Widget -->  
+            <div class="weather-embed">  
+                <iframe   
+                    src="https://www.wetter.com/wetter_com/widget/widget.php?ort=Gr%C3%BCnwald&ausgabe=6&size=1&farbe=0066CC&scrift=FFFFFF&grad=2"   
+                    width="100%"   
+                    height="200"   
+                    frameborder="0"   
+                    scrolling="no">  
+                </iframe>  
+            </div>  
+              
+            <!-- Backup für den Fall dass Widget nicht lädt -->  
+            <div class="weather-backup" id="weather-backup" style="display: none;">  
+                <div class="weather-icon">❄️</div>  
+                <div class="weather-temp">0°C bis 5°C</div>  
+                <div class="weather-desc">Februarwetter in Bayern - ideal fürs Eislaufen!</div>  
             </div>  
         </div>  
           
-        
+        <div class="weather-tips">  
+            <h3>👕 Kleidungsempfehlung für Eislaufen</h3>  
+            <div class="clothing-grid">  
+                <div class="clothing-item essential">  
+                    <span class="clothing-emoji">🧥</span>  
+                    <span class="clothing-text">Warme Winterjacke</span>  
+                </div>  
+                <div class="clothing-item essential">  
+                    <span class="clothing-emoji">🧤</span>  
+                    <span class="clothing-text">Wasserfeste Handschuhe</span>  
+                </div>  
+                <div class="clothing-item recommended">  
+                    <span class="clothing-emoji">🧢</span>  
+                    <span class="clothing-text">Warme Mütze</span>  
+                </div>  
+                <div class="clothing-item essential">  
+                    <span class="clothing-emoji">🧦</span>  
+                    <span class="clothing-text">Dicke Socken</span>  
+                </div>  
+                <div class="clothing-item recommended">  
+                    <span class="clothing-emoji">🥽</span>  
+                    <span class="clothing-text">Schutzbrille (optional)</span>  
+                </div>  
+                <div class="clothing-item essential">  
+                    <span class="clothing-emoji">👖</span>  
+                    <span class="clothing-text">Warme, flexible Hose</span>  
+                </div>  
+            </div>  
+        </div>  
     </div>  
       
     <div class="weather-actions">  
-        <a href="https://weather.com/de-DE/weather/tenday/l/Grünwald+Bayern+Deutschland"   
+        <a href="https://www.wetter.com/deutschland/wetter-gruenwald-18008681.html"   
            target="_blank"   
-           class="btn btn-secondary">  
-            📊 Detaillierte 10-Tage Vorhersage  
+           class="btn btn-primary weather-btn">  
+            🌡️ Detailvorhersage auf wetter.com  
         </a>  
-        <a href="https://www.wetter.de/deutschland/wetter-gruenwald-18225746.html"   
+        <a href="https://www.wetter.com/deutschland/wetter-gruenwald-18008681.html?timeframe=14days"   
            target="_blank"   
-           class="btn btn-primary">  
-            🌡️ Alternative Wetterquelle  
+           class="btn btn-secondary weather-btn">  
+            📅 14-Tage Trend  
         </a>  
+    </div>  
+      
+    <div class="weather-reminder">  
+        <div class="reminder-box">  
+            <h4>⚠️ Wichtiger Hinweis</h4>  
+            <p>Da wir draußen auf dem Eis sind, schaut bitte <strong>am Morgen des 08.02.</strong> nochmal das aktuelle Wetter!   
+            Bei extremem Wetter haben wir einen Indoor-Backup-Plan. 📞</p>  
+        </div>  
     </div>  
 </section>
         </main>  
