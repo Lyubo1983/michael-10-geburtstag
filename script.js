@@ -1,5 +1,5 @@
 // Datum der Party einfügen (Jahr, Monat-1, Tag, Stunde, Minute)  
-const partyDate = new Date(2026, 02, 08, 15, 0, 0); // Beispiel: 15. Februar 2026, 15:00  
+const partyDate = new Date(2026, 01, 08, 15, 0, 0); // Beispiel: 15. Februar 2026, 15:00  
   
 function updateCountdown() {  
     const now = new Date();  
